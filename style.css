@@ -137,7 +137,7 @@ h2 {
   filter: grayscale(0.8);
 }
 
-.about-me-container a {
+#resume {
   margin-top: 40px;
   font-family: "Afacad", sans-serif;
   font-size: 20px;
