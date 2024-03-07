@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+p {
+  margin: 0;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.title-container {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+.title-text {
+  color: white;
+  text-align: center;
+  margin: 3rem 20px 0px 20px;
+}
+
+.title-text h1 {
+  font-family: "Lora", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.title-text p {
+  font-family: "Afacad", sans-serif;
+  font-size: 2rem;
+}
+
+.title-fade {
+  height: 100px;
+  background-image: linear-gradient(black, white);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin: 0px 20px 0px 20px;
+  font-family: "Lora", serif;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.border-bottom {
+  position: relative;
+  top: 10px;
+  margin: auto;
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+}
+
+.portfolio-items {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-item {
+  position: relative;
+  min-width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.portfolio-item img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid black;
+}
+
+.portfolio-text {
+  padding: 5px 20px 10px 20px;
+}
+
+.portfolio-text h3 {
+  font-size: 1.5rem;
+  margin: 0px 0px 5px 0px;
+  font-family: "Lora", serif;
+}
+
+.portfolio-text p {
+  margin: 0;
+  font-size: 1rem;
+  font-family: "Afacad", sans-serif;
+}
+
+.project-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-family: "Afacad", sans-serif;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(0.8);
+}
+
+.about-me-text {
+  margin-top: 30px;
+  text-align: center;
+  width: 60%;
+}
+
+.about-me-text p {
+  font-size: 1.5rem;
+  font-family: "Lora", serif;
+}
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.contact-me-text {
+  width: 80%;
+}
+
+.contact-me-text h3 {
+  font-size: 2rem;
+  font-family: "Afacad", sans-serif;
+}
+
+.contact-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.contact-elements svg {
+  margin-right: 10px;
+}
+
+.contact-elements a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  font-family: "Cutive", serif;
+}
+
+@media (max-width: 845px) {
+  .portfolio-items {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .portfolio-item {
+    min-width: 300px;
+    max-height: 500px;
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+
+  .portfolio-item img {
+    object-fit: cover;
+    width: 300px;
+    height: 250px;
+  }
+
+  .about-me-text {
+    width: 60%;
+  }
+
+  .contact-me-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-elements p {
+    font-size: 1.2rem;
+  }
+}
